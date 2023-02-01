@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page - Social-Book Media Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/04ee589526.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="imgs/logo2.png" class="logo">
+            </a>
+            <ul>
+                <li><img src="imgs/notification.png"></li>
+                <li><img src="imgs/inbox.png"></li>
+                <li><img src="imgs/video.png"></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="imgs/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="imgs/profile-pic.png">
+            </div>
+        </div>
+
+        <!-- dropdown-settings-menu -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="imgs/profile-pic.png">
+                    <div>
+                        <p>Yogesh Borole</p>
+                        <a href="profile.html">See your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="imgs/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new Design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="imgs/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="imgs/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="imgs/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="imgs/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="imgs/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="imgs/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="imgs/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="imgs/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-------- Profile Page ---------->
+    <div class="profile-container">
+        <img src="imgs/cover.png" class="cover-img">
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="imgs/profile-pic.png" class="pd-img">
+                    <div>
+                        <h3>Yogesh Borole</h3>
+                        <p>964 Friends - 134 mutual</p>
+                        <img src="imgs/member-1.png">
+                        <img src="imgs/member-2.png">
+                        <img src="imgs/member-3.png">
+                        <img src="imgs/member-4.png">
+
+                    </div>
+                </div>
+            </div>
+            <div class="pd-right">
+                <button type="button"><img src="imgs/add-friends.png"> Friend</button>
+                <button type="button"><img src="imgs/message.png"> Message</button>
+                <br>
+                <a href=""><img src="imgs/more.png"></a>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <div class="info-col">
+                <div class="profile-intro">
+                    <h3>Intro</h3>
+                    <p class="intro-text">An Associate Software Engineer who has one year of experience on VCO Developer
+                        Automation Testing in Capgemini_India... <img src="imgs/feeling.png"></p>
+                    <hr>
+                    <ul>
+                        <li><img src="imgs/profile-job.png"> Director at Kisan Farming Pvt. Ltd</li>
+                        <li><img src="imgs/profile-study.png"> VCO Developer at VMware, Palo Alto, California</li>
+                        <li><img src="imgs/profile-study.png"> Studied at Sandip Foundation (SPPU)</li>
+                        <li><img src="imgs/profile-study.png"> Went to Bharat Vidyalaya Nhavi, Maharashtra</li>
+                        <li><img src="imgs/profile-home.png"> Lives in Pune, Maharashtra, India</li>
+                        <li><img src="imgs/profile-location.png"> From Jalgaon, Maharashtra, India</li>
+                        <li><img src="imgs/profile-follow.png"> Followed by 7890 people</li>
+                        <li><img src="imgs/profile-more.png"> See more about Yogesh</li>
+                    </ul>
+                </div>
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Photos</h3>
+                        <a href="">All Photos</a>
+                    </div>
+
+                    <div class="photo-box">
+                        <div><img src="imgs/photo1.png"></div>
+                        <div><img src="imgs/photo2.png"></div>
+                        <div><img src="imgs/photo3.png"></div>
+                        <div><img src="imgs/photo4.png"></div>
+                        <div><img src="imgs/photo5.png"></div>
+                        <div><img src="imgs/photo6.png"></div>
+                    </div>
+                </div>
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Friends</h3>
+                        <a href="">All Friends</a>
+                    </div>
+                    <p>964 (134 mutual)</p>
+
+                    <div class="friends-box">
+                        <div><img src="imgs/member-1.png">
+                            <p>Aarati Patil</p>
+                        </div>
+                        <div><img src="imgs/member-2.png">
+                            <P>Mukul Gajare</P>
+                        </div>
+                        <div><img src="imgs/member-3.png">
+                            <P>Utkarsh Singh</P>
+                        </div>
+                        <div><img src="imgs/member-4.png">
+                            <P>Nishant Firake</P>
+                        </div>
+                        <div><img src="imgs/member-5.png">
+                            <P>Anthony E</P>
+                        </div>
+                        <div><img src="imgs/member-6.png">
+                            <P>Michael A</P>
+                        </div>
+                        <div><img src="imgs/member-7.png">
+                            <P>Edward M</P>
+                        </div>
+                        <div><img src="imgs/member-8.png">
+                            <P>Bradon C</P>
+                        </div>
+                        <div><img src="imgs/member-9.png">
+                            <P>James Doe</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-col">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="imgs/profile-pic.png">
+                        <div>
+                            <p>Yogesh Borole</p>
+                            <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                        </div>
+                    </div>
+
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="What's on your mind, Yogesh"></textarea>
+                        <div class="add-post-links">
+                            <a href="#"><img src="imgs/live-video.png"> Live Video</a>
+                            <a href="#"><img src="imgs/photo.png"> Photo/Video</a>
+                            <a href="#"><img src="imgs/feeling.png"> Feeling/Activity</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="imgs/profile-pic.png">
+                            <div>
+                                <p>Yogesh Borole</p>
+                                <span>January 25 2023, 10:30 PM</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">Book ur order today for <span>makeup photoshoot,</span> Including makeup,
+                        hairstyling, well decorated set for photography & reel. <br>
+                        <a href="#">#Dreams_Photography</a> <br>
+                        <a href="#">#PuneMakeupArtist</a>
+                    </p>
+                    <img src="imgs/feed-image-1.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="imgs/like-blue.png">568</div>
+                            <div><img src="imgs/comments.png">128</div>
+                            <div><img src="imgs/share.png">12</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="imgs/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="imgs/profile-pic.png">
+                            <div>
+                                <p>Yogesh Borole</p>
+                                <span>January 22 2023, 07:34 PM</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text"><span>Stay Near Pawana Lake</span> We Offer Great Services, Prices, Delicious
+                        food
+                        & Premium Quality Tent. Amazing Scenery will welcome You as You spend your night Pawana Lake
+                        <br>
+                        <a href="#">#Pawana_Lake_Camping</a> <br>
+                        <a href="#">#Night_Fire</a>
+                    </p>
+                    <img src="imgs/feed-image-2.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="imgs/like.png">1K</div>
+                            <div><img src="imgs/comments.png">218</div>
+                            <div><img src="imgs/share.png">18</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="imgs/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="imgs/profile-pic.png">
+                            <div>
+                                <p>Yogesh Borole</p>
+                                <span>January 20 2023, 08:45 AM</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text"><span>Ticket booking for light and sound show: 6:30 PM - 8:30 PM every
+                            day,</span><br>
+                        Visiting hours: 8:00 AM - 6:30 PM every day<br>
+                        Time Required : 1 - 3 hours <br>
+                        Entry Fee : Indian citizens: INR 5 <br>
+                        <a href="#">#Shaniwarwada</a>,<br>
+                        <a href="#">#Peshwa_Governance</a>
+                    </p>
+                    <img src="imgs/feed-image-3.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="imgs/like-blue.png">1.8K</div>
+                            <div><img src="imgs/comments.png">384</div>
+                            <div><img src="imgs/share.png">26</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="imgs/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="imgs/profile-pic.png">
+                            <div>
+                                <p>Yogesh Borole</p>
+                                <span>January 16 2023, 04:45 AM</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text"><span>Reliance Jio [INTERNSHIP OPPORTUNITY] </span><br>
+                        Work From Home | Jakarta | Contract | Paid <br> Currently looking for Marketing International
+                        Internship to join in our marketing team. <br><br>
+                        <span>Job Description: </span><br>
+                        1. Create daily contents for Social Media (IG & Tiktok) <br>
+                        2. Maintain social media engagement with followers <br>
+                        3. Planning & execution of social media breakdown Assisting in ad hoc projects (operations,
+                        community building, streaming) <br><br>
+                        If you're interested, you can send your application through this link below:
+                        https://www.linkedin.com/jobs/search/?currentJobId= 3428711712&f <br>
+                        <a href="#">#workFromHome</a>,<br>
+                        <a href="#">#InternshipRemote</a>
+                    </p>
+                    <img src="imgs/feed-image-4.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="imgs/like-blue.png">2.3K</div>
+                            <div><img src="imgs/comments.png">1.1K</div>
+                            <div><img src="imgs/share.png">642</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="imgs/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="imgs/profile-pic.png">
+                            <div>
+                                <p>Yogesh Borole</p>
+                                <span>January 13 2023, 02:56 AM</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">Aarti Srivastava, CHRO - India, Capgemini, was recently invited for the Most
+                        Preferred Workplace 2022-23 - IT & ITES Edition, organized by <span>@marksmendaily and
+                            @team.marksmen</span> <br><br>
+                        She shared her thoughts at the <span>'Winning the talent war - Recruit, retrain and
+                            reskill'</span>panel
+                        discussion, elaborating on the increased pace of technological advancements along with the need
+                        to
+                        redesign talent acquisition strategies. She also spoke about Capgemini's initiatives in
+                        increasing
+                        employee engagement, where we foster a culture of continuous learning and upskilling for all and
+                        enable our employees to get the future they want. <br>
+                        <a href="#">#Capgemini_India</a><br>
+                        <a href="#">#GetTheFutureYouWant</a><br>
+                        <a href="#">#Preferredworkplace</a>
+                    </p>
+                    <img src="imgs/feed-image-5.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="imgs/like.png">992</div>
+                            <div><img src="imgs/comments.png">468</div>
+                            <div><img src="imgs/share.png">34</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="imgs/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© Copyright 2023 - Designed By : Yogesh Borole</p>
+    </div>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
